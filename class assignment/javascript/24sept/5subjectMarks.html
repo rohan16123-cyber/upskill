@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 subject mark calculation grade</title>
+</head>
+<body>
+    <script>
+        let a=Number(prompt("enter sub1 marks"));
+        let b=Number(prompt("enter sub2 marks"));
+        let c=Number(prompt("enter sub3 marks"));
+        let d=Number(prompt("enter sub4 marks"));
+        let e=Number(prompt("enter sub5 marks"));
+        g=((a+b+c+d+e)/500*100)
+        
+        if(g>=99){
+            document.write(g+" %you are pass grade A")
+        }else if(g>=75){
+            document.write(g+" %you are pass grade C")
+        }else if(g>=35){
+            document.write(g+" %you are pass grade D")
+        }else{ 
+            document.write(g+" %you are fail grade F")
+
+
+        }
+    </script>
+</body>
+</html>

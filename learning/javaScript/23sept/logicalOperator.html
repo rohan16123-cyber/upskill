@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num=Number(prompt("Enter Number"))
+        //And :-Return true when both condition is true 
+        if(num>0 && num<10){
+            document.write("<h2>"+num+" is positive single digit")
+        }
+        else{
+            document.write("<h2>"+num+" is not positive single digit")
+        }
+        //Or Return true when any one condition is true
+        if(num%3==0 || num%5==0){
+            document.write("<h2>"+num+" is either divisible by 3 or 5")
+        }    
+        else{
+            document.write("<h2>"+num+" is not by 3 and 5")
+        }
+        //Not:- invert result of condition if condition is true return false and vice versa
+        if(!(num>0)){
+            document.write("<h2>"+num+" -ve number")
+        }else{
+            document.write("<h2>"+num+" is +ve number")
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+
+</html>

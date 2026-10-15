@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let k=Number(prompt("enter num"))
+        let b=Number(prompt("enter num"))
+        for(let i=k;i<=b;i++){
+            if(i)
+                document.write(i+" Factors=")
+            for(let n=1;n<k;n++){
+                if(i%n==0){
+                    document.write((n*n))
+                }
+            }
+            document.write("<br>")
+        }
+
+
+    </script>
+</body>
+</html>

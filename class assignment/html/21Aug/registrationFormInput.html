@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Registration Form</h1>
+            <form>
+                Name:<input type="text" name="textname" placeholder="Enter name">
+                Last Name:<input type="text" name="textlastname" placeholder="Enter last name">
+                <br>
+                Gender:
+                male<input type="radio" name="gender" value="M">
+                female<input type="radio" name="gender" value="F">
+                <br>
+                Address:<textarea></textarea>
+                <br>
+                state:<input type="text" name="statename" placeholder="enter your state">
+                <br>
+                City:<input type="text" name="cityname" placeholder="enter city">
+                <br>
+                Pin-code:<input type="tel" name="Pin-code" maxlength="6">
+                <br>
+                Email:<input type="email" name="Email">
+                <br>
+                Contact:<input type="tel" name="cantact" maxlength="10">
+                <br>
+                Employment:<br>
+                           salaried<input type="radio" name="Employment">
+                           self-employment<input type="radio" name="Employment">
+                           other<input type="radio" name="Employment">
+                           <br>
+                Last digree graduate:
+                           <select id="digree">
+                              <option>diploma</option>
+                              <option>graduate</option>
+                              <option>post-garduate</option>
+                              <option>PHD</option>
+                           </select>
+                           <br>
+                Upload Resume:<input type="file" name="resume">
+            </form>
+    </main>
+</body>
+</html>

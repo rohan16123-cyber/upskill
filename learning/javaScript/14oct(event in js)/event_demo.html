@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function add(){
+            let no1= Number(document.frm.txtn1.value)
+            let no2= Number(document.frm.txtn2.value)
+            document.write("<h2>Addition is"+(no1+no2))
+            document.write("<h2>"+no1+"+"+no2+"="+(no1+no2))
+        }
+    </script>
+</head>
+<html>
+    <form name="frm">
+        Enter Number <input type="text" name="txtn1" id="t1">
+        Enter Number <input type="text" name="txtn2">
+        <input type="submit" value="Add" onclick="add()" onm>
+    </form>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>num is prefect or not</title>
+</head>
+<body>
+    <script>
+        let choice=prompt("1.enter 1 for perfect number 2.enter 2 for cube 3.enter 3 for palindrome")
+        let num=Number(prompt("enter num"))
+        let sum=0;
+        switch(choice){
+            case '1':
+                for(let i=1;i<num;i++){
+                    if(num%i===0){
+                        sum=sum+i
+                    }
+                }
+                    if(num > 0 && sum==num){
+                    document.write(num+"perfect num")
+                    }else{
+                    document.write(num+"not perfect num")
+                    }
+            break;
+
+            case '2':
+                sum=num*num*num
+                document.write(num+"<sup> 3 </sup> ="+sum);
+            break;
+
+            case '3':
+                for(let j=0; j<=length.num; j++);               
+        }
+        
+    </script>
+</body>
+</html>

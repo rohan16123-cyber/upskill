@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=1;i<=3;i++){
+            for(let j=1;j<=3;j++){
+                //document.write(i+" "+j+" &nbsp;&nbsp;&nbsp;")
+                document.write(" "+j+" ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br><br>")
+        //Print traingle
+        for(let i=1;i<=3;i++){
+            for(let j=i;j<=3;j++){
+                //document.write(i+" "+j+" &nbsp;&nbsp;&nbsp;")
+                document.write(" "+j+" ")
+            }
+            document.write("<br>")
+        }
+
+        for(let k=1;k<=20;k++){
+            if(k!=1)
+                document.write(k+" Factors=")
+            for(let n=1;n<k;n++){
+                if(k%n==0){
+                    document.write(n+",")
+                }
+            }
+            document.write("<br>")
+        }
+
+
+
+    </script>
+</body>
+</html>

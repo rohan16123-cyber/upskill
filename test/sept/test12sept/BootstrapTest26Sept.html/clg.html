@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Institute</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        .css-carousel {
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .carousel-track {
+            display: flex;
+            animation: slide 12s infinite;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .carousel-caption-custom {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        @keyframes slide {
+            0%, 28% {
+                transform: translateX(0);
+            }
+
+            33%, 61% {
+                transform: translateX(-100%);
+            }
+
+            66%, 94% {
+                transform: translateX(-200%);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Training Institute</a>
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Courses</a>
+            <a class="navbar-brand" href="#">About</a>
+            <a class="navbar-brand" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to Our Training Institute</h1>
+        <p class="text-center">
+            We offer a variety of courses to help you enhance your skills and knowledge.
+        </p>
+
+        <div class="css-carousel mt-5">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/1200x350/0d6efd/ffffff?text=Web+Development"
+                         alt="Web Development">
+                    <div class="carousel-caption-custom">
+                        <h2>Web Development</h2>
+                        <p>Build modern and responsive websites.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="https://via.placeholder.com/1200x350/198754/ffffff?text=Data+Science"
+                         alt="Data Science">
+                    <div class="carousel-caption-custom">
+                        <h2>Data Science</h2>
+                        <p>Learn data analysis and machine learning.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd13loartjoc1yn.cloudfront.net%2Fcourse%2F1686639548_Btech%2520Computer%2520Science%2520Syllabus.jpg&f=1&nofb=1&ipt=a9eaaca7c99babcb955b389192bbc5833257110e8c3317650cc1ba5ea5069c69"
+                         alt="Cloud Computing">
+                    <div class="carousel-caption-custom">
+                        <h2>Cloud Computing</h2>
+                        <p>Master cloud platforms and deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Existing course cards can remain here -->
+    </div>
+
+    <footer class="bg-light text-center py-4 mt-5">
+        <p>&copy; 2024 Training Institute. All rights reserved.</p>
+    </footer>
+</body>
+</html>

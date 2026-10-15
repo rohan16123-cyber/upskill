@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: beige;
+        }
+        .template{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;           
+        }
+        .headeer{
+            color: rgb(157, 0, 255);
+            text-align: center;
+        }
+       .template div{
+            border: 2px solid black;
+            height: 300px;
+        }
+        .template img{
+            width: 100%;
+            height: 100%;
+        }
+        @media(max-width:750px){
+            .template{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+     <marquee><h1 class="headeer">Flower Gallary</h1></marquee>
+    <section class="template">
+        <div class="image1"><img src="https://i.pinimg.com/1200x/b8/74/da/b874da3e8db76863ba3d3191d927603e.jpg" alt="Image 1"></div>
+        <div class="image2"><img src="https://i.pinimg.com/564x/6b/45/97/6b459721608055bb01dc11b5de94d0c3.jpg" alt="Image 2"></div>
+        <div class="image3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfpeTXfQogeke7yMWx62YHUuGa0Ag2lwTertfosh1D6dFmWLhoSRYYbxk&s=10" alt="Image 3"></div>
+        <div class="image4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRt-bzdXBYuGrX4KiOJJnnahNnHL3paYKMVoTOwy8MkV_8XxgEWtbpTig&s=10" alt="Image 4"></div>
+        <div class="image5"><img src="https://img.magnific.com/free-photo/cosmos-flowers_1373-83.jpg?semt=ais_hybrid&w=740&q=80" alt="Image 5 "></div>
+        <div class="image6"><img src="https://www.mydomaine.com/thmb/QXs8VZbAMKbcdiNYEDiojVxOkv8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cdn.cliqueinc.com__cache__posts__253245__most-beautiful-flowers-253245-1522430326665-main.700x0c-e023cc94a56b48f5afb963df0866a4a2.jpg" alt="Image 6"></div>
+        <div class="image7"><img src="https://i.pinimg.com/236x/c0/d8/0a/c0d80a5d314d69658afa0e82a0d9357b.jpg" alt="Image 7"></div>
+        <div class="image8"><img src="https://img.magnific.com/free-photo/close-up-full-bloom-flower_23-2151921043.jpg?semt=ais_hybrid&w=740&q=80" alt="Image 8"></div>
+        <div class="image9"><img src="https://images.pexels.com/photos/38007128/pexels-photo-38007128/free-photo-of-beautiful-close-up-of-purple-wildflowers-in-bloom.jpeg?cs=tinysrgb&dpr=1&w=500" alt="Image 9"></div>
+    </section>
+    
+</body>
+</html>

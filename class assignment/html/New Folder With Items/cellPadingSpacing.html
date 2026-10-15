@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellpadding_Cellspacing_rowspan_calspan_caption</title>
+</head>
+<body>
+    <h1>Example of Rowspan</h1>
+    <table border="1" align="center" cellpadding="10" cellspacing="10">
+       <caption>rowspan</caption>
+        <!-- <caption>rowspan</caption> used for heading taable without aligning -->
+        <tr>
+             <td rowspan="2">row 1, cell 1</td>
+             <!-- rowspan used for merging the cells vertically -->
+             <!-- 2nd cell of row 1 will be merged with 1st cell of row -->
+             <td>row 1, cell 2</td>
+             <td>row 1, cell 3</td>
+        </tr>
+        <tr>
+             <td >row 2, cell 1</td>
+             <td>row 2, cell 2</td>
+             <td>row 2, cell 3</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+        <h1> ex of Colspan</h1>
+    <table border="1" align="center" cellpadding="10" cellspacing="10">
+        <caption>colspan</caption>
+        <tr>
+            <td colspan="2">row 1, cell 1</td>
+            <!-- colspan used for merging the cells horizontally -->
+            <td>row 1, cell 2</td> 
+            <td>row 1, cell 3</td>
+            <td>row 1, cell 4</td>
+        </tr>
+        <tr>
+            <td>row 2, cell 1</td>
+            <td>row 2, cell 2</td>
+            <td>row 2, cell 3</td>
+            <td>row 2, cell 4</td>
+            <td>row 2, cell 5</td>
+    </table>
+</body>
+</html>

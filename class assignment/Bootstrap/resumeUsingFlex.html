@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A responsive resume built with Bootstrap flex utilities.">
+	<title>Rohan Chavan | Resume</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--ink: #17202a;
+			--muted: #66717c;
+			--paper: #f5f7f4;
+			--card: #ffffff;
+			--accent: #e76f51;
+			--accent-dark: #bc4d34;
+			--line: #dfe5e0;
+			--teal: #1f7a75;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			color: var(--ink);
+			background: var(--paper);
+			font-family: "DM Sans", sans-serif;
+		}
+
+		h1, h2, h3, .brand { font-family: "Space Grotesk", sans-serif; }
+
+		.resume-shell {
+			max-width: 1180px;
+			background: var(--card);
+			box-shadow: 0 18px 60px rgba(23, 32, 42, 0.08);
+		}
+
+		.sidebar {
+			flex: 0 0 31%;
+			background: var(--ink);
+			color: #f7fbf8;
+		}
+
+		.main-content { flex: 1 1 69%; min-width: 0; }
+		.eyebrow { color: var(--accent); letter-spacing: .14em; font-size: .75rem; font-weight: 700; }
+		.profile-mark {
+			width: 78px;
+			height: 78px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid var(--accent);
+			border-radius: 50%;
+			color: var(--accent);
+			font: 700 1.7rem "Space Grotesk", sans-serif;
+		}
+
+		.sidebar-title {
+			color: #98c9c2;
+			letter-spacing: .12em;
+			font-size: .72rem;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.contact-list { list-style: none; padding: 0; margin: 0; }
+		.contact-list li { display: flex; gap: .7rem; margin-bottom: .85rem; color: #c9d3d1; font-size: .9rem; }
+		.contact-list strong { color: #fff; min-width: 3.5rem; font-size: .76rem; text-transform: uppercase; letter-spacing: .05em; }
+		.skill { margin-bottom: 1rem; }
+		.skill-name { display: flex; justify-content: space-between; font-size: .88rem; margin-bottom: .35rem; }
+		.progress { height: 6px; background: #35414a; }
+		.progress-bar { background: var(--accent); }
+
+		.hero { border-bottom: 1px solid var(--line); }
+		.hero h1 { font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: .95; letter-spacing: -.05em; }
+		.hero .role { color: var(--teal); font-size: 1.15rem; font-weight: 600; }
+		.section-heading { display: flex; align-items: center; gap: .8rem; margin-bottom: 1.3rem; }
+		.section-heading h2 { margin: 0; font-size: 1.15rem; letter-spacing: .04em; text-transform: uppercase; }
+		.section-heading::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+		.timeline-item { position: relative; padding-left: 1.5rem; border-left: 2px solid #b9d9d3; }
+		.timeline-item::before { content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+		.timeline-item + .timeline-item { margin-top: 1.6rem; }
+		.timeline-item h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+		.meta { color: var(--accent-dark); font-size: .82rem; font-weight: 700; }
+		.timeline-item p, .project p { color: var(--muted); font-size: .92rem; line-height: 1.65; }
+		.project { border: 1px solid var(--line); border-radius: 8px; padding: 1.15rem; height: 100%; }
+		.project h3 { font-size: 1rem; }
+		.tag { display: inline-block; color: var(--teal); background: #e5f2ef; border-radius: 100px; padding: .25rem .55rem; font-size: .72rem; font-weight: 700; margin: .15rem .15rem 0 0; }
+		.download-btn { color: #fff; background: var(--accent); border: 0; }
+		.download-btn:hover { color: #fff; background: var(--accent-dark); }
+
+		@media (max-width: 767.98px) {
+			.sidebar, .main-content { flex-basis: 100%; }
+			.sidebar { padding: 2rem !important; }
+			.main-content { padding: 2rem !important; }
+		}
+	</style>
+</head>
+<body>
+	<main class="container-fluid py-4 py-md-5">
+		<div class="resume-shell d-flex flex-column flex-md-row mx-auto overflow-hidden rounded-3">
+			<aside class="sidebar p-4 p-lg-5 d-flex flex-column">
+				<div class="profile-mark mb-4" aria-label="Alex Morgan initials">AM</div>
+				<p class="sidebar-title mb-2">Contact</p>
+				<ul class="contact-list mb-5">
+					<li><strong>Phone</strong><span>+91 98765 43210</span></li>
+					<li><strong>Email</strong><span>rohan@email.com</span></li>
+					<li><strong>Web</strong><span>rohan.dev</span></li>
+					<li><strong>City</strong><span>Bengaluru, India</span></li>
+				</ul>
+
+				<p class="sidebar-title mb-3">Technical Skills</p>
+				<div class="skill"><div class="skill-name"><span>HTML &amp; CSS</span><span>95%</span></div><div class="progress"><div class="progress-bar" style="width: 95%"></div></div></div>
+				<div class="skill"><div class="skill-name"><span>Bootstrap</span><span>90%</span></div><div class="progress"><div class="progress-bar" style="width: 90%"></div></div></div>
+				<div class="skill"><div class="skill-name"><span>JavaScript</span><span>82%</span></div><div class="progress"><div class="progress-bar" style="width: 82%"></div></div></div>
+				<div class="skill"><div class="skill-name"><span>React</span><span>78%</span></div><div class="progress"><div class="progress-bar" style="width: 78%"></div></div></div>
+				<div class="skill mb-5"><div class="skill-name"><span>Git &amp; GitHub</span><span>86%</span></div><div class="progress"><div class="progress-bar" style="width: 86%"></div></div></div>
+
+				<p class="sidebar-title mb-3">Languages</p>
+				<p class="mb-2">English <span class="text-white-50">/ Fluent</span></p>
+				<p class="mb-2">Hindi <span class="text-white-50">/ Native</span></p>
+				<p class="mb-0">Kannada <span class="text-white-50">/ Conversational</span></p>
+			</aside>
+
+			<section class="main-content p-4 p-lg-5">
+				<header class="hero pb-4 mb-4 d-flex flex-column flex-sm-row justify-content-between align-items-start gap-3">
+					<div>
+						<p class="eyebrow mb-3">Front-end developer</p>
+						<h1 class="mb-3">Rohan<br> Chavan</h1>
+						<p class="role mb-0">Building clear, useful digital experiences.</p>
+					</div>
+					<a class="download-btn btn btn-sm px-3 py-2" href="#contact">Get in touch</a>
+				</header>
+
+				<section class="mb-5">
+					<div class="section-heading"><h2>Profile</h2></div>
+					<p class="text-secondary lh-lg mb-0">Front-end developer with 3+ years of experience creating responsive interfaces and accessible web experiences. I enjoy translating complex requirements into simple, maintainable products that feel good to use.</p>
+				</section>
+
+				<section class="mb-5">
+					<div class="section-heading"><h2>Experience</h2></div>
+					<div class="timeline-item">
+						<p class="meta mb-1">2023 - Present / Pixel Foundry</p>
+						<h3>Front-end Developer</h3>
+						<p class="mb-0">Develop responsive customer dashboards using React and Bootstrap. Collaborate with design and product teams to improve usability, performance, and component consistency.</p>
+					</div>
+					<div class="timeline-item">
+						<p class="meta mb-1">2021 - 2023 / Bright Labs</p>
+						<h3>Web Developer</h3>
+						<p class="mb-0">Built and maintained marketing websites and internal tools. Introduced reusable layout patterns that reduced page development time and improved mobile accessibility.</p>
+					</div>
+				</section>
+
+				<section class="mb-5">
+					<div class="section-heading"><h2>Selected Projects</h2></div>
+					<div class="d-flex flex-column flex-sm-row flex-wrap gap-3">
+						<article class="project flex-fill">
+							<h3>Course Compass</h3>
+							<p class="mb-2">A searchable learning platform that helps students plan a focused study path.</p>
+							<span class="tag">React</span><span class="tag">Bootstrap</span>
+						</article>
+						<article class="project flex-fill">
+							<h3>GreenCart</h3>
+							<p class="mb-2">A responsive shopping experience for local, sustainable products.</p>
+							<span class="tag">JavaScript</span><span class="tag">CSS</span>
+						</article>
+					</div>
+				</section>
+
+				<section id="contact">
+					<div class="section-heading"><h2>Education</h2></div>
+					<div class="d-flex flex-column flex-sm-row justify-content-between gap-2">
+						<div><h3 class="h5 mb-1">B-Tech Computer Science</h3><p class="text-secondary mb-0">Bangalore University</p></div>
+						<p class="meta mb-0">2018 - 2021</p>
+					</div>
+				</section>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
+

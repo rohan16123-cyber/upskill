@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+    <script>
+        function changecolor(choice){
+            if(choice=='red'){
+                document.body.style.backgroundColor = "red";
+            }else if(choice=='blue'){
+                document.body.style.backgroundColor = "blue";
+            }else{
+                document.body.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</head>
+<body>
+    change color red<input type="radio" onclick="changecolor('red')" >
+    <br>
+    change color blue<input type="radio" onclick="changecolor('blue')">
+    <br>
+    change color green<input type="radio" onclick="changecolor('green')">
+</body>
+</html>

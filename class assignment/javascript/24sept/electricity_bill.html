@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity bill</title>
+</head>
+<body>
+    <script>
+       /*
+       let a=Number(prompt("enter electricity unit"));
+        
+        if(a<=50){
+            b=a*0
+            document.write(b);
+        }else if( (a>=50 || a>=100)){
+            c=(a*)
+            document.write(c);
+        }else if(a>=100 || a>=200){
+            d=((a*7)+b+c);
+            document.write(d);
+        }else{
+            e=((a*10)+b+c+d);
+            document.write(e);
+        }*/
+
+
+
+        let a=Number(prompt("unit"))
+        if(a<=50){
+            b=(a*0);
+            document.write("bill is"+b);
+        }else if(a<=100){
+            c=(a-50)
+            d=(c*5)
+            document.write("bill is"+d);
+        }else if(a<=200){
+            b=(a-50);
+            d=(b*5);
+            e=(a-100*7);
+           
+            document.write("bill is"+e)
+        }
+
+
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

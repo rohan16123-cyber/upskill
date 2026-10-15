@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 10px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 5fr 1fr;
+                grid-template-areas: 
+                "headerArea headerArea"
+                "mainArea mainArea1"
+                "footerArea footerArea";
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+            .outerBox{
+                height: 700px;
+                width: 800px;
+                border: 4px solid black;
+            }
+            .headerContent{
+                grid-area: headerArea;
+                border: 4px solid black;    
+            }
+            .mainContent{
+                grid-area: mainArea;
+                border: 4px solid black; 
+            }
+            .mainContent1{
+                grid-area: mainArea1;
+                border: 4px solid black; 
+            }
+            .footerContent{
+                grid-area: footerArea;
+                border: 4px solid black; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container outerBox">
+            <div class="headerContent">Header</div>
+            <div class="mainContent">main</div>
+            <div class="mainContent1">main</div>
+            <div class="footerContent">footer</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;    
+}
+.hero-container{
+    position: relative;
+    height: 50%
+
+
+}
+.hero-text{
+    position: absolute;
+    
+    
+    color: #1dbedf;
+    font-size: 40px;
+    font-weight: bold;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;   
+}  
+.subtitle{
+    font-size: 20px;
+   
+    margin-left: 60px;
+}
+a{
+   
+    text-decoration: none;
+   
+    margin-right: 20px;
+}
+.btn2{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #1c86e2;
+    background-color: transparent;
+    border: solid 2px #1c86e2;
+    border-radius: 25px;
+}
+main{
+      margin: 10px;
+    padding: 20px;
+}
+.hero{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.routes{
+    text-align: center;  
+}
+.card{
+    border: solid rgba(224, 220, 220, 0.437) 1px;
+}
+.card-img-top{
+    width: 100%;
+    height: 250px;
+}
+.card-text{
+   padding: 0px;
+   margin: 0px;
+}
+.btn{
+    display:flex;
+    justify-content: center;
+}
+.price{
+    justify-content: center;
+    
+}
+.ad{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;   
+}
+.btn3{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #1c86e2;
+    background-color: transparent;
+    border: solid 2px #1c86e2;
+    border-radius: 25px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;   
+    background-color: #3b709f;
+    color: #fff;
+}
+.footer-links{
+    
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b709f;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;   
+}
+.icons{
+    display: flex;
+    
+    
+     
+}

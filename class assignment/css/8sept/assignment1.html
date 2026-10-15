@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Home Page</title>
+    <style>
+        /* Base Reset & Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Moving Text Ticker */
+        .ticker-wrapper {
+            background-color: #003366;
+            color: #ffffff;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .ticker-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        /* Header Section */
+        header {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #003366;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* Container for Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        /* Section Headings */
+        .section-title {
+            color: #003366;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #003366;
+            padding-bottom: 8px;
+        }
+
+        /* Responsive Grid Configuration */
+        .grid-4-columns {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        /* Card Component Styling */
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .grid-4-columns {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-4-columns {
+                grid-template-columns: 1fr; /* 1 column on mobile screens */
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Moving Text (Ticker) -->
+    <div class="ticker-wrapper">
+        <div class="ticker-text">
+            📢 Admissions Open for Academic Year 2026-2027! | Entrance examination registration deadline extended to next Friday. | Welcome to our campus!
+        </div>
+    </div>
+
+    <!-- College Name Header -->
+    <header>
+        <h1>Excel Institute of Higher Education</h1>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="container">
+        
+        <!-- Courses Offered Section -->
+        <section>
+            <h2 class="section-title">Courses Offered</h2>
+            <div class="grid-4-columns">
+                <!-- Course 1 -->
+                <article class="card">
+                    <div class="card-image">Computer Science Image</div>
+                    <div class="card-content">
+                        <h3>B.Sc. Computer Science</h3>
+                        <p>Explore software engineering, data structures, artificial intelligence, and modern web systems architecture.</p>
+                    </div>
+                </article>
+                <!-- Course 2 -->
+                <article class="card">
+                    <div class="card-image">Business Admin Image</div>
+                    <div class="card-content">
+                        <h3>Business Administration</h3>
+                        <p>Master leadership skills, financial accounting, marketing strategies, and organizational management principles.</p>
+                    </div>
+                </article>
+                <!-- Course 3 -->
+                <article class="card">
+                    <div class="card-image">Engineering Image</div>
+                    <div class="card-content">
+                        <h3>Mechanical Engineering</h3>
+                        <p>Gain hands-on knowledge in robotics, structural mechanics, thermodynamics, and manufacturing automation.</p>
+                    </div>
+                </article>
+                <!-- Course 4 -->
+                <article class="card">
+                    <div class="card-image">Design Image</div>
+                    <div class="card-content">
+                        <h3>Digital Design & Arts</h3>
+                        <p>Learn core visual communication principles, user experience models, 3D animations, and digital illustration tools.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section>
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="grid-4-columns">
+                <!-- Event 1 -->
+                <article class="card">
+                    <div class="card-image">Hackathon Image</div>
+                    <div class="card-content">
+                        <h3>Annual Tech Hackathon</h3>
+                        <p>Join us for a 48-hour collaborative building experience with mentorship from top technology industry experts.</p>
+                    </div>
+                </article>
+                <!-- Event 2 -->
+                <article class="card">
+                    <div class="card-image">Career Fair Image</div>
+                    <div class="card-content">
+                        <h3>Global Career Fair</h3>
+                        <p>Connect directly with recruitment leaders from leading Fortune 500 corporations hiring on campus this term.</p>
+                    </div>
+                </article>
+                <!-- Event 3 -->
+                <article class="card">
+                    <div class="card-image">Guest Lecture Image</div>
+                    <div class="card-content">
+                        <h3>AI & Ethics Symposium</h3>
+                        <p>A deep panel discussion regarding the societal impacts, regulations, and moral futures of automated intelligences.</p>
+                    </div>
+                </article>
+                <!-- Event 4 -->
+                <article class="card">
+                    <div class="card-image">Sports Meet Image</div>
+                    <div class="card-content">
+                        <h3>Inter-College Championship</h3>
+                        <p>Support our athletic teams competing across tracking, football, basketball, and competitive tennis fields.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

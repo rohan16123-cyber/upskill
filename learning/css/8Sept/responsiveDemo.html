@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 10px;
+                padding: 10px;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                gap:10px;
+                padding: 10px;                
+            }
+            .innerBox{
+                flex: 1 1 300px;
+                border: 2px solid black;
+            }
+            img{
+                height: auto;
+                width: 100%;
+                padding-left: 0px;
+                
+            }
+            @media(max-width=750px){
+                .container{
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="innerBox">
+                <h1>This is example of responsive web-page</h1>
+                <h1>Use display flex</h1>
+            </div>
+            <div class="innerBox">
+                <h1>This is example of responsive web-page</h1>
+                <h1>Use display flex</h1>
+            </div>
+            <div class="innerBox">
+                <h1>This is example of responsive web-page</h1>
+                <h1>Use display flex</h1>
+            </div>
+            <div class="innerBox">
+                <img src="https://images.ctfassets.net/2pyx8rwuvz6x/773QeQxptgZ9AZD05coaJz/dc7851936a1e6f03dcd53c60af0c2bfc/Copy_of_2025_Fall_Trends_Report_FullGrid.jpg?fm=webp&q=85">
+            </div>
+        </div>
+    </body>
+</html>
